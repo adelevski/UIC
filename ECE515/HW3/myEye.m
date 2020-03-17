@@ -7,13 +7,13 @@ mask = createMask(h);
 imwrite(mask, 'EyeMask.bmp', 'bmp');
 
 
-% You Must Create this bmp in order to load it
+% You Must Create this bmp in order to load it bruv
 % 1's where you want the mask to be 'on' and 0's for 'off'
 M_img = imread('EyeMask.bmp');
 
 
 % Convert to double
-A = im2double(A_img); 
+A = im2double(A_img);
 E = im2double(E_img);
 M = im2double(M_img);
 %display the images in a 1,2 matrix subplot
@@ -27,7 +27,7 @@ imshow(M)
 
 A_GP = myGaussianPyramid(A,11); %Create pyramid of Apple
 E_GP = myGaussianPyramid(E,11); %Create Pyramid of Orange
-M_GP = myGaussianPyramid(M,11); %Create Pyramid of Mask 
+M_GP = myGaussianPyramid(M,11); %Create Pyramid of Mask
 
 A_LP = myLaplacianPyramid(A_GP);
 E_LP = myLaplacianPyramid(E_GP);
