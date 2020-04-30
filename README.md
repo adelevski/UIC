@@ -1,2 +1,2 @@
 # UIC
-My work as a student at the University of Illinois at Chicago
+Some of my work from my time as a graduate student at the University of Illinois at Chicago
